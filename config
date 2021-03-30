@@ -1,0 +1,23 @@
+# Debug mode (true or false). All messages will be logged in debug mode
+DEBUG = false
+
+# Protocol for which this proxy is to be used (udp, tcp, http or chttp)
+PROTOCOL = tcp
+
+# Port on which to listen for incoming requests
+LISTEN_PORT = 17000
+
+# If used in cascade mode (udp or tcp protocols)
+# the host address to which requests are to be forwarded
+CASCADE_HOST = 10.130.100.102
+
+# If used in cascade mode (udp or tcp protocols) the port number on
+# target machine to which requests are to be forwarded
+CASCADE_PORT = 7000
+
+# List of IP addresses who are not allowed to connect to proxy
+REJECT_IP_LIST =
+
+# List of IP addresses who are to be allowed to connect to proxy
+# ALLOW_IP_LIST = 127.0.0.1 10.1.1.11 10.1.1.17 10.1.1.60
+# ALLOW_IP_LIST = 10.1.1.127
